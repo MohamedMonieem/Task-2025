@@ -1,0 +1,13 @@
+.footer-container {
+    background: #F5F5F5;
+    font-size: 14px;
+}
+
+img {
+    width: 200px;
+}
+
+a{
+   text-decoration: none;
+   color: #333; 
+}

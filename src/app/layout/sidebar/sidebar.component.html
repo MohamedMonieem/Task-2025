@@ -1,0 +1,46 @@
+<aside>
+  <button class="btn-sidbar">
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+  <div class="sidenav">
+    <div class="container">
+      <div class="d-flex align-items-center header">
+        <img src="download.png" alt="Logo" class="logo" width="68" />
+        <h3>نظام منجز</h3>
+      </div>
+
+      <div class="d-flex gap-2 align-items-center">
+        <img src="Icon2.png" alt="Icon" />
+        <button class="submenu-button" routerLink="/">لوحة المعلومات</button>
+      </div>
+
+      <div class="small mb-2 mt-3 fw-bold">القوائم</div>
+      <div class="tittle" *ngFor="let item of menuItems">
+        <button (click)="toggleMenu(item)" class="menu-button">
+          <span class="d-flex align-items-center gap-2">
+            <i class="fa-solid {{item.icon}}"></i>
+            <span>{{ item.label }}</span>
+          </span>
+          <span class="arrow">
+            @if(item.expanded) {
+            <i class="fa-solid fa-caret-down"></i>
+            } @else {
+            <i class="fa-solid fa-caret-left"></i>
+            }
+          </span>
+        </button>
+
+        <div *ngIf="item.expanded" class="submenu">
+          <button *ngFor="let sub of item.submenu" class="submenu-button">
+            {{ sub }}
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="bottom">
+        <button class="logout-button">تسجيل دليل المستخدم</button>
+      </div>
+    </div>
+  </div>
+</aside>

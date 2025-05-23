@@ -1,0 +1,25 @@
+/* .page-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "navbar sidebar"
+        "main sidebar"
+        "footer sidebar";
+    gap: 1rem;
+}
+
+app-navbar {
+    grid-area: navbar;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+app-sidebar {
+    grid-area: sidebar;
+}
+
+main {
+    grid-area: main;
+} */

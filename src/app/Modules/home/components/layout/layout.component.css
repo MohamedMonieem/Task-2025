@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+}
+.tabs {
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    display: inline-flex;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.tab {
+    padding: .5rem 1rem;
+}
+.tab.active,
+.tab:hover {
+    background-color: white;
+    border-radius: 10px;
+}

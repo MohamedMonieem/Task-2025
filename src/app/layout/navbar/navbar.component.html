@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-sm">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse align-items-center justify-content-between navbar-collapse" id="navbarSupportedContent">
+            <h6 class="fw-bold">لوحة المعلومات</h6>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item d-flex align-items-center">
+                    <i class="fa-solid fa-comments  myicon"></i>
+                    <i class="fa-solid fa-bell myicon"></i>
+                    <i class="fa-solid fa-circle-user myicon  myicon" (click)="showSidebar = true"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<app-user [(isOpen)]="showSidebar"></app-user>

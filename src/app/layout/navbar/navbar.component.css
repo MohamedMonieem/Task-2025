@@ -1,0 +1,32 @@
+.navbar {
+    padding: 12px 8px;
+    align-items: center;
+    background-color: #F5F5F5;
+    margin-top: 1rem;
+    border-radius: 12px;
+}
+
+
+.navbar-nav {
+    width: 40;
+    height: 20;
+    border-radius: 8px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.fa-solid {
+    width: 40;
+    height: 40;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 8px;
+    color: #BC8B2F;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
+}

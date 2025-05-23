@@ -1,0 +1,67 @@
+<div class="sidebar" [class.open]="isOpen">
+
+
+  <div class="header">
+    <span class="title">بيانات المستخدم</span>
+    <div class="close-btn" (click)="closeSidebar()">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="main-box">
+    <div class="user-info">
+      <div> <img class="avatar" src="avatar.png" alt="User" /> </div>
+
+      <div>
+        <div class="name">الاسم</div>
+        <div class="role">مدير إدارة النظم والبرامج</div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="info-list">
+      <div class="info-item">
+        <i class="fa-solid fa-id-card icon fa-fw"></i>
+        <span>الهوية</span>
+        <span>4216561564</span>
+      </div>
+
+      <div class="info-item">
+        <i class="fa-solid fa-medal icon fa-fw"></i>
+        <span>ألرتبة</span>
+        <span>مقدم</span>
+      </div>
+
+      <div class="info-item">
+        <i class="fa-solid fa-user-tie icon fa-fw"></i>
+        <span>الحالة</span>
+        <span>مدير</span>
+      </div>
+
+      <div class="info-item">
+        <i class="fa-solid fa-building icon fa-fw"></i>
+        <span>المقر</span>
+        <span>الجهاز الرئيسي</span>
+      </div>
+
+      <div class="info-item">
+        <i class="fa-solid fa-folder icon fa-fw"></i>
+        <span>الجهة</span>
+        <span>إدارة النظم والبرامج</span>
+      </div>
+    </div>
+
+
+
+  </div> <!-- main box -->
+  <div class="footer">
+    <button class="logout-btn">تسجيل خروج</button>
+  </div>
+
+
+</div>

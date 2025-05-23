@@ -1,0 +1,41 @@
+<button class="btn-create my-2" routerLink="/adding">إنشاء</button>
+
+<div class="card">
+  <div class="p-input-icon-left" style="margin-bottom: 1rem;">
+    <i class="pi pi-search" style="margin-right: 0.5rem;"></i>
+    <input pInputText type="text" [(ngModel)]="search" placeholder="بحث" />
+  </div>
+
+  <p-table [value]="filteredRows" [paginator]="true" [rows]="10" [rowsPerPageOptions]="[10, 20, 50]" [responsiveLayout]="'scroll'" sortMode="multiple">
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="width: 100px;"></th>
+        <th>مربع تحديد</th>
+        <th>الأهمية</th>
+        <th>عدد التعليقات</th>
+        <th>تاريخ الورود</th>
+        <th>داخلي / خارجي</th>
+        <th>جهة الإرسال</th>
+        <th>موضوع المعاملة</th>
+        <th>رقم</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-row>
+      <tr>
+        <td><button pButton type="button" label="عرض التفاصيل" class="p-button-text p-button-sm"></button></td>
+        <td><p-checkbox binary="true" [(ngModel)]="row.reviewed"></p-checkbox></td>
+        <td>{{ row.urgency }}</td>
+        <td>{{ row.comments }}</td>
+        <td>{{ row.date }}</td>
+        <td>{{ row.internalExternal }}</td>
+        <td>{{ row.category }}</td>
+        <td>{{ row.subject }}</td>
+        <td>{{ row.id }}</td>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="paginatorleft">
+      <div>عرض من {{ filteredRows.length }}</div>
+    </ng-template>
+  </p-table>
+</div>
